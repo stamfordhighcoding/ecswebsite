@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Early College Studies at SHS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+    <div class="div-holder">
+        <a href="index.html">
+            <img src="/media/logo.png" alt="Logo">
+        </a>
+        <div class="links">
+            <div class="nav-item">
+                <a href="./" id="home">Home</a>
+                <div class="popup none">
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="about.html" id="about">About</a>
+                <div class="popup"> 
+                    <a href="about.html#degrees">Degrees & Credits</a>
+                    <a href="about.html#courses">Courses</a>
+                    <a href="about.html#compare">Compare programs</a>
+                    <a href="about.html#faculty">Faculty</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="faq.html" id="faq">FAQ</a>
+                <div class="popup">
+                <a href="faq.html#what-exactly-is-ecs">what is ECS?</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="#.html">Apply</a>
+                <div class="popup none">
+                </div>
+            </div>
+            <div class="nav-item">
+                <button onclick="contact()" id="contact">Contact</button>
+                <div class="popup link-contact">
+                <button
+                    type="button"
+                    class="copy-email"
+                    data-email="ascianna@stamfordct.gov"
+                    aria-label="Copy email address">
+                    ascianna@stamfordct.gov
+                </button>
+                 <p><a href="tel:+12039650123">(203) 977-5398</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-tn-change">
+            <button onclick="showMobileNav()">☰</button>
+            <div class="nav-hidden">
+                <a href="./">Home</a>
+                <a href="about.html">About</a>
+                <div class="nav-tn-subsection">
+                    <a href="#.html">Item</a>
+                    <a href="#.html">Item</a>
+                    <a href="#.html">Item</a>
+                </div>
+                <a href="faq.html" id="faq">FAQ</a>
+                <div class="nav-tn-subsection">
+                    <a href="#.html">Item</a>
+                    <a href="#.html">Item</a>
+                    <a href="#.html">Item</a>
+                </div>
+                <a href="#.html">Apply</a>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <div class="content">
+        <h1>Our Mission</h1>
+        <p>The mission of the Early College Studies (ECS) program at Stamford High School is to support students in cultivating future-ready skills for high school, college and the workforce while empowering them to pursue a career in computer science.</p>
+        <p>Thanks to a partnership with CT State Norwalk (formerly Norwalk Community College), students have the opportunity to simultaneously earn their high school diploma and an associate’s degree in computer science within four, five or six years. Stamford High School educators provide students with the coursework they need to develop appropriate academic and executive skills while content-specific educators at CT State Norwalk provide coursework students need for the degree in Computer Science.</p>
+        <h1 id="degrees">Degrees</h1>
+        <div class="horizontal-scroll-small">
+            <div class="degree-table">
+                <div></div>
+                <div>
+                    <!--mobile programming-->
+                </div>
+                <div>
+                    <!--web development-->
+                </div>
+                <div>
+                    <!--software engineering-->
+                </div>
+                <div>
+                    <p>Focus</p>
+                </div>
+                <div>
+                    <p>Native or cross-platform apps for smartphones/tablets</p>
+                </div>
+                <div>
+                    <p>Websites and web applications via browsers</p>
+                </div>
+                <div>
+                    <p>End-to-end design and construction of software systems</p>
+                </div>
+                <div>
+                    <p>Required General Education Courses</p>
+                    <button onclick="creditDetails()">Credits</button>
+                </div>
+                <div>
+                    <p>(23-24 credits)</p>
+                    <ul>
+                        <li>ENG 1010 - Composition</li>
+                        <li class="credit-details">Credits: 3</li>
+                        <li>MATH 1610 or higher</li>
+                        <li class="credit-details">Credits: 4</li>
+                        <li>Elective ARHX</li>
+                        <li class="credit-details">(Arts & Humanities Course) Credits: 3-4</li>
+                        <li>BIO 1210 - General Biology I</li>
+                        <li class="credit-details">Credits: 4</li>
+                        <li>HIST 1015 or HIST 1016</li>
+                        <li class="credit-details">(US History to 1877 or US History from Reconstruction) Credits: 3</li>
+                        <li>COMM 1301 - Public Speaking</li>
+                        <li class="credit-details">Credits: 3</li>
+                        <li>CCS 1001 - College & Career Success</li>
+                        <li class="credit-details">Credits: 3</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>(21-23 credits)</p>
+                    <ul>
+                        <li>ENG 1010 - Composition</li>
+                        <li class="credit-details">Credits: 3</li>
+                        <li>MATH 1610 or higher</li>
+                        <li class="credit-details">Credits: 4</li>
+                        <li>Elective ARHX</li>
+                        <li class="credit-details">(Arts & Humanities Course) Credits: 3-4</li>
+                        <li>Elective SCRX or Elective SCKX</li>
+                        <li class="credit-details"> Scientific Reasoning Course Credits: 4, or Scientific Knowledge Course Credits: 3-4</li>
+                        <li>Elective SBSX or Elective HISX </li>
+                        <li class="credit-details">Social / Behavioral Science Course Credits: 3, or Historical Knowledge Course Credits: 3</li>
+                        <li>COMM 1301 - Public Speaking</li>
+                        <li class="credit-details">Credits: 3</li>
+                        <li>CCS 1001 - College & Career Success</li>
+                        <li class="credit-details">Credits: 3</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>(23-24 credits)</p>
+                    <ul>
+                        <li>ENG 1010 - Composition</li>
+                        <li class="credit-details">Credits: 3</li>
+                        <li>MATH 2600 - Calculus I</li>
+                        <li class="credit-details">Credits: 4</li>
+                        <li>Elective ARHX</li>
+                        <li class="credit-details">(Arts & Humanities Course) Credits: 3-4</li>
+                        <li>BIO 1210 - General Biology I</li>
+                        <li class="credit-details">Credits: 4</li>
+                        <li>HIST 1015 or HIST 1016</li>
+                        <li class="credit-details">(US History to 1877 or US History from Reconstruction) Credits: 3</li>
+                        <li>COMM 1301 - Public Speaking</li>
+                        <li class="credit-details">Credits: 3</li>
+                        <li>CCS 1001 - College & Career Success</li>
+                        <li class="credit-details">Credits: 3</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Program Courses</p>
+                    <button onclick="courseDetails()">Credits</button>
+                </div>
+                <div>
+                    <p>(40-42 credits)</p>
+                    <ul>
+                        <li>CSC 1201 - Introduction to Programming</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>CSC 2213 - Object Oriented Programming</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>CSC 1231 - Database Development I</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>CSC 2232 - Database Development II </li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>CSC 2252 - Programming Mobile Devices I</li>
+                        <li class="course-details">Credits: 3</li>
+                        <li>CSC 2253 - Programming Mobile Devices II</li>
+                        <li class="course-details">Credits: 3</li>
+                        <li>CSC 1271 - Web Development and Design I</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>CSC 2272 - Web Development and Design II</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>XML for the Worldwide Web</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>Directed Electives</li>
+                        <li class="course-details">(Any CSC or CST or MATH 2000-level or higher) Credits: 6-8</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>(39 credits)</p>
+                    <ul>
+                        <li>ART 1210 - Two-Dimensional Design</li>
+                        <li class="course-details">Credits: 3</li>
+                        <li>GRA 1501 - Graphic Design I</li>
+                        <li class="course-details">Credits: 3</li>
+                        <li>GRA 2301 - Digital Imaging II</li>
+                        <li class="course-details">Credits: 3</li>
+                        <li>CSC 1201 - Introduction to Programming</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>CSC 1231 - Database Development I</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>CSC 1271 - Web Development and Design I</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>CSC 2213 - Object Oriented Programming</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>CSC 2252 - Programming Mobile Devices I</li>
+                        <li class="course-details">Credits: 3</li>
+                        <li>CSC 2272 - Web Development and Design II</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>CSC 2275 - Web Development With PHP</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>CSC 2253 - Programming Mobile Devices II</li>
+                        <li class="course-details">Credits: 3</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>(37-38 credits)</p>
+                    <ul>
+                        <li>CSC 1201 - Introduction to Programming</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>CSC 2219 - Introduction to Bioinformatics</li>
+                        <li class="course-details">Credits: 3</li>
+                        <li>CSC 2213 - Object Oriented Programming</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>CSC 1231 - Database Development I</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>CSC 2218 - Software Engineering Methods</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>CIS 1104 - Introduction to Operating Systems</li>
+                        <li class="course-details">Credits: 3</li>
+                        <li>CSC 1271 - Web Development and Design I</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>CSC 2272 - Web Development and Design II</li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>CSC 2276 - XML for the Worldwide Web </li>
+                        <li class="course-details">Credits: 4</li>
+                        <li>Directed Elective</li>
+                        <li class="course-details">(Any CSC or CST or MATH 2000-level or higher) Credits: 3-4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h1 id="courses">Course Info</h1>
+        
+
+
+        <div class="divider-line" id="freshman-year"></div>
+
+
+
+
+
+<div class="about-section">
+
+  <div class="row">
+    <div class="text">
+      <h2>Workplace Learning I</h2>
+      <p>
+        In this course, students focus on the essential skills of
+        communication, collaboration, curiosity, and career exploration.
+      </p>
+    </div>
+    <div class="image-wrapper">
+      <img src="/media/about-f1.jpg" alt="Students collaborating in classroom">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="text">
+      <h2>Intro to Programming</h2>
+      <p>
+        Introduces students to how corporate software projects are
+        developed, managed, integrated, and fielded. Students will
+        acquire key professional skills.
+      </p>
+    </div>
+    <div class="image-wrapper">
+      <img src="/media/about-f2.jpg" alt="Student holding microcontroller">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="text">
+      <h2>Web Development and Design</h2>
+      <p>
+        An introductory web design course that focuses on standards
+        for HTML and CSS. Students will be introduced to JavaScript
+        briefly at the end of the course.
+      </p>
+    </div>
+    <div class="image-wrapper">
+      <img src="/media/about-f1.jpg" alt="Students collaborating in classroom">
+    </div>
+  </div>
+
+</div>
+<div class="about-section-small">
+    <div class="course-card">
+        <div class="text">
+            <h2>Workplace Learning I</h2>
+            <p>
+                In this course, students focus on the essential skills of communication, collaboration, curiosity, and career exploration.
+            </p>
+        </div>
+        <div class="course-imgs">
+            <img src="/media/about-f1.jpg" alt="Students collaborating in classroom">
+        </div>
+    </div>
+    <div class="course-card">
+        <div class="course-imgs">
+            <img src="/media/about-f2.jpg" alt="Students collaborating in classroom">
+        </div>
+        <div class="text text-r">
+            <h2>Intro to Programming</h2>
+            <p>
+                Introduces students to how corporate software projects are developed, managed, integrated, and fielded. Students will acquire key professional skills.
+            </p>
+        </div>
+    </div>
+     <div class="course-card">
+        <div class="text">
+            <h2>Web Development and Design</h2>
+            <p>
+                An introductory web design course that focuses on standards for HTML and CSS. Students will be introduced to JavaScript briefly at the end of the course.
+            </p>
+        </div>
+        <div class="course-imgs">
+            <img src="/media/about-f1.jpg" alt="Students collaborating in classroom">
+        </div>
+    </div>
+</div>
+ <div class="divider-line" id="sophomore-year"></div>
+<!--NS-->
+<div class="about-section">
+    
+    <div class="row none"></div>
+  <div class="row">
+    <div class="text">
+      <h2>Workplace Learning II</h2>
+      <p>
+         The second in a series of required workplace learning courses. Focus on the essential skills of motivation, leadership, self-management, and analytical thinking. 
+      </p>
+    </div>
+    <div class="image-wrapper">
+      <img src="https://www.ecsstamford.com/uploads/1/6/9/2/16922340/published/capture2.jpg?1603902273" alt="Students collaborating in classroom">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="text">
+      <h2>College level comp. sci work</h2>
+      <p>
+        Based on previous performance, freshman students can start college summer work during the summer. Include Web Dev & Design, Database Dev, and intro to programming.
+      </p>
+    </div>
+    <div class="image-wrapper">
+      <img src="/media/about-f2.jpg" alt="Student holding microcontroller">
+    </div>
+  </div>
+
+</div>  
+<div class="about-section-small">
+    <div class="course-card">
+        <div class="course-imgs">
+            <img src="https://www.ecsstamford.com/uploads/1/6/9/2/16922340/published/capture2.jpg?1603902273" alt="Students collaborating in classroom">
+        </div>
+        <div class="text text-r">
+            <h2>Workplace Learning II</h2>
+            <p>
+               The second in a series of required workplace learning courses. Focus on the essential skills of motivation, leadership, self-management, and analytical thinking.
+            </p>
+        </div>
+    </div>
+    <div class="course-card">
+        <div class="text">
+            <h2>College level comp. sci work</h2>
+            <p>
+                Based on previous performance, freshman students can start college summer work during the summer. Include Web Dev & Design, Database Dev, and intro to programming.
+            </p>
+        </div>
+        <div class="course-imgs">
+            <img src="/media/about-f1.jpg" alt="Students collaborating in classroom">
+        </div>
+    </div>
+</div>
+ <div class="divider-line" id="junior-year"></div>
+<div class="about-section">
+    
+    <div class="row none"></div>
+  <div class="row">
+    <div class="text">
+      <h2>​Career and Technical Education & Fine Arts Electives</h2>
+      <p>
+         Students choose from a group of career and technical education and fine arts electives to help them become specialized team experts.
+      </p>
+    </div>
+    <div class="image-wrapper">
+      <img src="https://www.ecsstamford.com/uploads/1/6/9/2/16922340/published/wpl-3.png?1700074065" alt="Students collaborating in classroom">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="text">
+      <h2>College level comp. sci work & Other College Electives</h2>
+      <p>
+         Students might be finishing their introductory college coursework at SHS and can start to pursue additional college courses directly through NCC. 
+      </p>
+    </div>
+    <div class="image-wrapper">
+      <img src="/media/about-j1.jpeg" alt="Student holding microcontroller">
+    </div>
+  </div>
+
+</div> 
+<div class="about-section-small">
+    <div class="course-card">
+        <div class="course-imgs">
+            <img src="https://www.ecsstamford.com/uploads/1/6/9/2/16922340/published/wpl-3.png?1700074065" alt="Students collaborating in classroom">
+        </div>
+        <div class="text text-r">
+            <h2 class="long">​Career and Technical Education & Fine Arts Electives</h2>
+            <p>
+               Students choose from a group of career and technical education and fine arts electives to help them become specialized team experts.
+            </p>
+        </div>
+    </div>
+    <div class="course-card">
+        <div class="text">
+            <h2 class="long">College level comp. sci work & Other College Electives</h2>
+            <p>
+                Students might be finishing their introductory college coursework at SHS and can start to pursue additional college courses directly through NCC.
+            </p>
+        </div>
+        <div class="course-imgs">
+            <img src="/media/about-j1.jpeg" alt="Students collaborating in classroom">
+        </div>
+    </div>
+</div>
+
+
+ <div class="divider-line" id="senior-year"></div>
+<div class="about-section">
+    
+    <div class="row none"></div>
+  <div class="row">
+    <div class="text">
+      <h2>​Workplace Learning III</h2>
+      <p>
+         Demonstrate ability to work independently and in teams. Students work on a capstore project, designing it from conception to completion.
+      </p>
+    </div>
+    <div class="image-wrapper">
+      <img src="https://www.ecsstamford.com/uploads/1/6/9/2/16922340/published/wpl-3.png?1700074065" alt="Students collaborating in classroom">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="text">
+      <h2>College level comp. sci work & Other College Electives</h2>
+      <p>
+         Students may spend their senior year at NCC fulltime and would have completed their capstore project junior year. Students completing their Associate's degree in 5 to 6 years will take a combination of classes at SHS and NCC.
+      </p>
+    </div>
+    <div class="image-wrapper">
+      <img src="/media/about-j1.jpeg" alt="Student holding microcontroller">
+    </div>
+  </div>
+
+</div> 
+<div class="about-section-small">
+    <div class="course-card">
+        <div class="course-imgs">
+            <img src="https://www.ecsstamford.com/uploads/1/6/9/2/16922340/published/wpl-3.png?1700074065" alt="Students collaborating in classroom">
+        </div>
+        <div class="text text-r">
+            <h2 class="long">Workplace Learning III</h2>
+            <p>
+               Demonstrate ability to work independently and in teams. Students work on a capstore project, designing it from conception to completion.
+            </p>
+        </div>
+    </div>
+    <div class="course-card">
+        <div class="text">
+            <h2 class="long">College level comp. sci work & Other College Electives</h2>
+            <p>
+                Students may spend their senior year at NCC fulltime and would have completed their capstore project junior year. Students completing their Associate's degree in 5 to 6 years will take a combination of classes at SHS and NCC.
+            </p>
+        </div>
+        <div class="course-imgs">
+            <img src="/media/about-j1.jpeg" alt="Students collaborating in classroom">
+        </div>
+    </div>
+</div>
+
+<br>
+<h1 id="compare">Program Comparison</h1>
+
+<div class="horizontal-scroll-small">
+    <table id="compare-table">
+    <thead>
+        <tr>
+        <th>Program</th>
+        <th>Grade Levels</th>
+        <th>Credentials</th>
+        <th>Application</th>
+        <th>Schedule</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-borders">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td>Early College Studies (ECS)</td>
+        <td>9–12</td>
+        <td>HS Diploma + A.A.</td>
+        <td>8th grade lottery/Early Decision</td>
+        <td>Dual enrollment (year-round + summer)</td>
+        </tr>
+        <tr class="table-borders">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td>High School of Business (HSB)</td>
+        <td>9–12</td>
+        <td>HS credits + up to 9 college credits</td>
+        <td>Freshman application/interview</td>
+        <td>A/B block, sequential</td>
+        </tr>
+        <tr class="table-borders">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td>International Baccalaureate (IB)</td>
+        <td>9–12 (MYP 9–10; DP 11–12)</td>
+        <td>HS Diploma + IB Diploma</td>
+        <td>Sophomore application</td>
+        <td>Two-year DP; year-long MYP</td>
+        </tr>
+        <tr class="table-borders">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td>UConn Early College Experience (ECE)</td>
+        <td>9–12</td>
+        <td>UConn college credits (transcript)</td>
+        <td>Course enrollment</td>
+        <td>Semester or A/B block</td>
+        </tr>
+        <tr class="table-borders">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td>Advanced Placement (AP)</td>
+        <td>9–12</td>
+        <td>AP credit/placement</td>
+        <td>Open enrollment</td>
+        <td>A/B block</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+    <p><b>Note</b>: Students may enroll in multiple programs if their schedules allow, except the IB Diploma Programme and ECS, which have overlapping, intensive timelines.</p>
+    <br>
+    <h1 id="faculty">Faculty and Staff</h1>
+
+    <div class="grid-col-3">
+        <div class="faculty-card">
+            <div class="faculty-mw">
+                <div class="cover">
+                    <img src="https://www.ecsstamford.com/uploads/1/6/9/2/16922340/published/img-2434.jpg?1663330858">
+                </div>
+                <button onclick="facultyDetails('scianna')">&#129058;</button>
+                <h3>Adam Scianna</h3>
+                <h4>Director of Early College Studies</h4>
+            </div>
+        </div>
+                <div class="faculty-card">
+            <div class="faculty-mw">
+                <div class="cover">
+                    <img src="https://www.ecsstamford.com/uploads/1/6/9/2/16922340/published/20201213-093228.jpg?1663330886">
+                </div>
+                <button onclick="facultyDetails('keller')">&#129058;</button>
+                <h3>Larry Keller</h3>
+                <h4>CT State / SHS Computer Science Courses,
+Workplace Learning III</h4>
+            </div>
+        </div>
+        <div class="faculty-card">
+            <div class="faculty-mw">
+                <div class="cover">
+                    <img src="https://www.ecsstamford.com/uploads/1/6/9/2/16922340/published/screen-shot-2020-11-06-at-9-23-58-am.png?1604674818">
+                </div>
+                <button onclick="facultyDetails('downer')">&#129058;</button>
+                <h3>Module Downer</h3>
+                <h4>CT State Graphic Design & 2-D Design</h4>
+            </div>
+        </div>
+        <div class="faculty-card">
+            <div class="faculty-mw">
+                <div class="cover">
+                    <img src="./media/faculty_hadsell.webp">
+                </div>
+                <button onclick="facultyDetails('hadsell')">&#129058;</button>
+                <h3>Melissa Hadsell</h3>
+                <h4>CT State Composition & Public Speaking</h4>
+            </div>
+        </div>
+            <div class="faculty-card">
+            <div class="faculty-mw">
+                <div class="cover">
+                    <img src="https://www.ecsstamford.com/uploads/1/6/9/2/16922340/published/capture1.png?1663330850">
+                </div>
+                <button onclick="facultyDetails('duffy')">&#129058;</button>
+                <h3>Tom Duffy</h3>
+                <h4>​NCC Computer Science Dept. Chair</h4>
+            </div>
+        </div>
+            <div class="faculty-card">
+            <div class="faculty-mw">
+                <div class="cover">
+                    <img src="./media/faculty-placeholder.webp">
+                </div>
+                <button onclick="facultyDetails('pirro')">&#129058;</button>
+                <h3>Ryan Pirro</h3>
+                <h4>Workplace Learning II</h4>
+            </div>
+        </div>
+    </div><!--end content-->
+    </div>
+
+    <div id="faculty-container">
+        <div id="faculty-profile">
+            <div class="scianna">
+                <img src="https://www.ecsstamford.com/uploads/1/6/9/2/16922340/published/img-2434.jpg?1663330858">
+                <div>
+                    <h3>Adam Scianna</h3>
+                    <h4>Director of Early College Studies</h4>
+                </div>
+            </div>
+            <div class="scianna">
+                <p>Adam Scianna is a former Mathematics Teacher at Stamford High School and has served as the Director of the Early College Studies program at Stamford High School since 2018.<br>
+                Mr. Scianna has a background in engineering and is a strong proponent of preparing students to be not only college but also career ready.<br>
+                Mr. Scianna has Bachelor’s and Master’s Degrees in Civil Engineering from the University of Connecticut, as well as a Certificate of Advanced Study in Educational Administration and Supervision from the University of Bridgeport.</p>
+            </div>
+            <div class="keller">
+                <img src="https://www.ecsstamford.com/uploads/1/6/9/2/16922340/published/20201213-093228.jpg?1663330886">
+                <div>
+                    <h3>Larry Keller</h3>
+                    <h4>CT State / SHS Computer Science Courses, Workplace Learning III</h4>
+                </div>
+            </div>
+            <div class="keller">
+                <p>Larry Keller started his career in education at SHS in 2002 as a Business and Technology Teacher.  In 2008, he was transferred to AITE, where he continued teaching Business and Technology courses for 6 years; which included Microsoft Office Suite, Introduction to Programming, Database Design and Video Game Design.  In 2014, he was promoted to Assistant Principal of AITE, where he spent the next 6 years, until returning to the classroom back at SHS, in 2020.
+                    <br>Mr. Keller enjoyed 20+ years of Software Development, Hardware Support and Database Design experience in the I/T Industry prior to entering the world of education.  He spent many years at IBM and other Fortune 500 companies, as both an employee and independent contractor.  Mr. Keller graduated from Ramapo College of New Jersey, with a B.S. in Business Management with a concentration in Management Information Systems.  He earned his 2 Masters in Education from the University of Bridgeport.  As a lifelong learner, Mr. Keller, imparts that passion to his students.
+                    <br>His knowledge of numerous software languages, operating system platforms, database languages, project management tools and professionalism allows him to create real life project based learning assignments to challenge students.  His project based approach to instruction has provided many students with the ability to be self-starters and independent thinkers in creatively solving problems.  Students are given opportunities to expand their knowledge and increase their confidence in problem solving skills through thoughtful and challenging projects.
+                </p>
+            </div>
+            <div class="downer">
+                <img src="https://www.ecsstamford.com/uploads/1/6/9/2/16922340/published/screen-shot-2020-11-06-at-9-23-58-am.png?1604674818">
+                <div>
+                    <h3>Module Downer</h3>
+                    <h4>CT State Graphic Design & 2-D Design</h4>
+                </div>
+            </div>
+            <div class="downer">
+                <p>
+                    Module Downer is the Arts Department Head at Stamford High School and has taught several disciplines such as Digital Photography, Color and Design, Graphic Design, Drawing and Painting I and II for twenty years.
+                    <br>A native of Springfield, MA, Module was a Jessie Parks Scholar and earned a Bachelor's degree in Science and a Masters degree of Education from Springfield College. Today, Module is currently pursuing her doctoral degree in Educational Leadership at the University of Bridgeport.
+                    <br>An experienced Graphic Artist Module has a passion for art and technology and is proficient in Adobe InDesign, and Photoshop. A small business owner, Module has developed sports magazines, designed national campaigns for FedEx, and continues to share her knowledge with high school and adult education students. 
+                </p>
+            </div>
+              <div class="hadsell">
+                <img src="./media/faculty_hadsell.webp">
+                <div>
+                    <h3>Melissa Hadsell</h3>
+                    <h4>CT State Composition & Public Speaking</h4>
+                </div>
+            </div>
+            <div class="hadsell">
+                <p>
+                    Melissa Hadsell, a former SHS Black Knight herself, has been teaching for thirteen years. She has taught grades 9-12, including AP Literature and Composition, UConn ECE English, and Creative Writing. 
+                    <br>Ms. Hadsell has a Bachelor’s Degree in English from the University of Connecticut, a Master’s Degree in Secondary Education from Sacred Heart University, and a Master of Fine Arts Degree in Fiction Writing from Manhattanville College. 
+                </p>
+            </div>
+            <div class="duffy">
+                <img src="https://www.ecsstamford.com/uploads/1/6/9/2/16922340/published/capture1.png?1663330850">
+                <div>
+                    <h3>Tom Duffy</h3>
+                    <h4>NCC Computer Science Dept. Chair</h4>
+                </div>
+           
+            </div>
+            <div class="duffy">
+                <p>
+                    Professor Tom Duffy is the Chair of the Computer Science Department and the Program Coordinator for the Computer Science degree as well as the Web Developer, Relational Database, and Smartphone App Development certificates. He teaches courses in Web Development, XML, Java, and Mobile Device Programming.
+                    <br>Professor Duffy holds a Bachelor of Science degree in Mathematics and Master of Arts degree in Mathematics/Computer Science from Western Connecticut State University. He is the owner of Bright Moments Software – a software company specializing in Web Technologies.
+                    <br>Professor Duffy has published <a href="http://www.bright-moments.com/pmd/">Programming With Mobile Applications</a>, his second book. The book is available from Cengage Learning. He also just published <a href="https://www.linkedin.com/learning/vanilla-javascript-progressive-web-applications/leverage-your-web-skills-for-mobile-development?autoplay=true">Vanilla JavaScript: Progressive Web Apps</a>, his fifth course on LinkedIn Learning where he specializes in Web and Mobile development.
+                </p>         
+            </div>
+            <div class="pirro">
+                <img src="./media/faculty-placeholder.webp">
+                <div>
+                    <h3>Ryan Pirro</h3>
+                    <h4>Workplace Learning II</h4>
+                </div>
+            </div>
+            <div class="pirro">
+                <p>
+                    Ryan Pirro graduated from Southern State University with a Bachelor's of Science and Business Administration in management. He has proven to show strong leadership, management, entreprenuership, communication, business development, negotiation, and business relationship management skills.
+                </p>
+            </div>
+
+
+        </div>
+        <div id="faculty-profile-off"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
