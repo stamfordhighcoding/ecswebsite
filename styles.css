@@ -10,11 +10,11 @@ html{
 }
 @font-face {
   font-family: 'Font1';
-  src: url('./media/font1.woff2') format('woff2');
+  src: url('font1.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Inter';
-  src: url('/media/Inter.ttf') format('TrueType');
+  src: url('Inter-var.ttf') format('TrueType');
 }
 :root{
     --theme:rgb(255, 245, 231);
