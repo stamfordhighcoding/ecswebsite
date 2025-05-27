@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Early College Studies at SHS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+    <div class="div-holder">
+        <a href="index.html">
+            <img src="https://github.com/stamfordhighcoding/assets/blob/main/ecslogo.png?raw=true" alt="Logo">
+        </a>
+        <div class="links">
+            <div class="nav-item">
+                <a href="./" id="home">Home</a>
+                <div class="popup none">
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="about.html" id="about">About</a>
+                <div class="popup"> 
+                    <a href="about.html#degrees">Degrees & Credits</a>
+                    <a href="about.html#courses">Courses</a>
+                    <a href="about.html#compare">Compare programs</a>
+                    <a href="about.html#faculty">Faculty</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="faq.html" id="faq">FAQ</a>
+                <div class="popup">
+                <a href="faq.html#what-exactly-is-ecs">what is ECS?</a>
+                <a href="faq.html#can-i-play-sports-and-other-extracurricular-activities-in-ecs">Extracurriculars</a>
+                <a href="faq.html#why-is-it-beneficial-to-attend-this-type-of-school">Benefits</a>
+                <a href="faq.html#do-norwalk-community-college-credits-transfer-to-other-schools">Credits Transfers</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="application.html">Apply</a>
+                <div class="popup none">
+                </div>
+            </div>
+            <div class="nav-item">
+                <button onclick="contact()" id="contact">Contact</button>
+                <div class="popup link-contact">
+                <button
+                    type="button"
+                    class="copy-email"
+                    data-email="ascianna@stamfordct.gov"
+                    aria-label="Copy email address">
+                    ascianna@stamfordct.gov
+                </button>
+                 <p><a href="tel:+12039650123">(203) 977-5398</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-tn-change">
+            <button onclick="showMobileNav()">☰</button>
+            <div class="nav-hidden">
+                <a href="./">Home</a>
+                <a href="about.html">About</a>
+                <div class="nav-tn-subsection">
+                    <a href="#.html">Item</a>
+                    <a href="#.html">Item</a>
+                    <a href="#.html">Item</a>
+                </div>
+                <a href="faq.html" id="faq">FAQ</a>
+                <div class="nav-tn-subsection">
+                    <a href="#.html">Item</a>
+                    <a href="#.html">Item</a>
+                    <a href="#.html">Item</a>
+                </div>
+                <a href="#.html">Apply</a>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+<button id="faq-language-switch" onclick="faqLanguageSwitch()">
+    Español
+</button>
+
+    <div class="content eng">
+                <!-- faq.html -->
+        <section id="what-exactly-is-ecs" class="faq-item">
+        <h2><a href="#what-exactly-is-ecs">What exactly is ECS?</a></h2>
+        <div class="answer">
+            Early College Studies is a program pathway to help you or your child receive an associates degree.
+        </div>
+        </section>
+        <section id="what-does-a-typical-day-look-like-for-an-ecs-student" class="faq-item">
+        <h2><a href="#what-does-a-typical-day-look-like-for-an-ecs-student">What does a typical day look like for an ECS student?</a></h2>
+        <div class="answer">
+            <p>The typical day for a freshman in ECS looks a lot like the day for any other freshman. Being part of this program does not excuse a student from any of the requirements for high school graduation; additionally, Norwalk Community College (NCC) does not allow students to start taking coursework until at least their sophomore year. Therefore, students attend their regularly scheduled high school courses at whatever level they have been assigned (i.e., English 9 Honors, Biology CP, etc.) by their middle school counselor.</p>
+            <p>All freshmen ECS students, however, have Workplace Learning 1, Introduction to Programming (ECS), and Web Development and Design (ECS) as courses on their schedule. These courses are counted as electives toward high school graduation requirements, but they are mandatory for participation in this program. While ECS students will find themselves “mixed in” with students who are not in the program in almost all of their classes, these three courses are only open to students in the program.</p>
+            <p>Sophomore year, students begin taking NCC courses. Stamford High School currently offers three introductory NCC computer science courses on the SHS campus during the school day. This enables sophomores to start their NCC coursework while remaining on the Stamford High School campus. Additionally, all sophomores are required to take Workplace Learning 2.</p>
+            <p>Starting junior year, students are eligible to begin taking courses directly through NCC in addition to having their year-long capstone project in Workplace Learning 3.</p>
+        </div>
+        </section>
+        <section id="can-i-play-sports-and-other-extracurricular-activities-in-ecs" class="faq-item">
+        <h2><a href="#can-i-play-sports-and-other-extracurricular-activities-in-ecs">Can I play sports and other extracurricular activities in ECS?</a></h2>
+        <div class="answer">
+            <p>Absolutely…and it depends. ECS students are welcome to participate in sports and other extracurricular activities. We have a significant number of students who play at least one sport throughout the year, and we also have students involved in drama club, debate, 3D printing club, coding club, band, chorus and more.</p>
+            <p>Extracurricular participation may also be determined by the student’s goals for themselves in the program. If the student is intent on completing the associate’s degree within their four years of high school, the student is going to need to make schedule-related sacrifices. Completion of both high school coursework and an associate’s degree makes for a demanding schedule. Add sports practice into the mix, or other time-consuming activities, and life could get very overwhelming and unmanageable for a student.</p>
+        </div>
+        </section>
+        <section id="who-can-apply-for-and-attend-ecs" class="faq-item">
+        <h2><a href="#who-can-apply-for-and-attend-ecs">Who can apply for and attend ECS?</a></h2>
+        <div class="answer">
+            <p>ECS@SHS is a specialized program that is only available to Stamford Public School students. Even a Stamford student who is zoned for attendance at Westhill High School can attend Stamford High School full-time so he/she can be a part of the program if accepted. Applicants must be residents of the City of Stamford. Therefore, students in 8th grade who currently attend a school other than one associated with Stamford Public Schools may apply as long as they are residents of the city.</p>
+        </div>
+        </section>
+        <section id="what-if-i-want-to-apply-to-aite" class="faq-item">
+        <h2><a href="#what-if-i-want-to-apply-to-aite">What if I want to apply to AITE?</a></h2>
+        <div class="answer">
+            <p>We invite all students who are interested in applying to AITE as well to take part in our admissions process. ECS is about supporting students in their transition from high school to college and career, so this is a student’s first opportunity to gain experience with the post-secondary process. After all, the best case scenario is that one day a graduating senior student applies to multiple colleges and gets multiple acceptance letters, or a job-seeker interviews at multiple companies and receives multiple job offers! This application process should be treated the same way.</p>
+            <p>There are many reasons why a student might choose to go to AITE or to any other program held in the district. What separates ECS from other programs is that it provides students with the opportunity of pursuing and earning a degree. College degrees are the completion of a series of requirements that then make the degree-holder eligible for relevant paid work. While students can take college-level courses at any of the Stamford public high schools through AP or UConn Early College Experience courses, these courses become a collection of separate credits on a student’s resume and do not lead to a degree.</p>
+        </div>
+        </section>
+        <section id="what-happens-if-i-am-placed-on-the-lottery-waiting-list" class="faq-item">
+        <h2><a href="#what-happens-if-i-am-placed-on-the-lottery-waiting-list">What happens if I am placed on the lottery waiting list?</a></h2>
+        <div class="answer">
+            <p>Each student placed on the waiting list is provided a number to let them know what spot they are on this list. If an accepted student decides not to enter the program, their spot is offered to the person next in line on the waiting list until it is filled.</p>
+        </div>
+        </section>
+        <section id="why-is-it-beneficial-to-attend-this-type-of-school" class="faq-item">
+        <h2><a href="#why-is-it-beneficial-to-attend-this-type-of-school">Why is it beneficial to attend this type of school?</a></h2>
+        <div class="answer">
+            <p>The world and the job market are changing. Today’s jobs especially require more technology-based skills. Many positions require less than a four-year degree, but more than a high school diploma. According to projections by the <a href="https://cew.georgetown.edu/wp-content/uploads/2014/11/Recovery2020.ES_.Web_.pdf">Center on Education and the Workforce at Georgetown University</a>, “65% of all jobs in the economy will require postsecondary education and training beyond high school.” On average, workers with an associate’s degree will earn 73% more than those with only a high school diploma.</p>
+            <p>ECS@SHS allows students who may not have thought about college, or who may be the first in their family to consider it, or who may not be able to afford college, to earn an associate degree and a real opportunity at a good job after graduating. With a high school diploma and associate degree at graduation, they are prepared to join the workforce, or continue on to earn a four-year or advanced degree.</p>
+        </div>
+        </section>
+        <section id="what-coursework-is-offered-through-the-ncc-degree-program" class="faq-item">
+        <h2><a href="#what-coursework-is-offered-through-the-ncc-degree-program">What coursework is offered through the NCC degree program?</a></h2>
+        <div class="answer">
+            <p>Students have the option of three degree-tracks, focusing on either mobile programming, software engineering, or website development and design. You can find a list of courses required for each degree track by <a href="about.html#degrees">clicking here</a>.</p>
+        </div>
+        </section>
+        <section id="what-kind-of-jobs-can-students-get-after-graduating" class="faq-item">
+        <h2><a href="#what-kind-of-jobs-can-students-get-after-graduating">What kind of jobs can students get after graduating?</a></h2>
+        <div class="answer">
+            <p>Students who earn one of the AAS degrees are prepared for entry level careers in computer programming, database programming and administration, and web development. Students also get a foundation in the field of computer systems that will let them transition into a Bachelor of Technology in Computer Systems program, if they desire. Furthermore, these AAS options prepare competent technicians who have the skills needed by the computer industry. Graduates qualify for occupations such as field engineer, computer-repair technician, business machines technician, data processing equipment specialist, electromechanical technician, laboratory technician, production assembly technician, biomedical instruments service technician, and robotics service technician. Manufacturers and users of computers and electromechanical equipment are potential employers.</p>
+        </div>
+        </section>
+        <section id="do-norwalk-community-college-credits-transfer-to-other-schools" class="faq-item">
+        <h2><a href="#do-norwalk-community-college-credits-transfer-to-other-schools">Do Norwalk Community College Credits Transfer to Other Schools?</a></h2>
+        <div class="answer">
+            <p>Norwalk Community College does not guarantee all of their credits can or will transfer to every school, college, or university in the nation. Any decision on the comparability, appropriateness and applicability of credit and whether credit should be accepted is the decision of the receiving institution.</p>
+            <p>As students begin to research colleges and apply, they should connect with an admissions counselor at each school to find out what courses could transfer to the school.</p>
+        </div>
+        </section>
+        <section id="how-is-the-students-college-level-coursework-funded" class="faq-item">
+        <h2><a href="#how-is-the-students-college-level-coursework-funded">How is the student’s college-level coursework funded?</a></h2>
+        <div class="answer">
+            <p>There are a number of opportunities for students to get coursework funded. First, with our partnership with NCC, Juniors and Seniors are eligible to have two courses per semester (Fall and Spring) be covered via the high school partnership program. In addition to this, SHS offers a number of NCC courses on the SHS campus which students do not have to pay for. Students can also utilize AP and UConn ECE courses to fulfill some of their NCC degree coursework. Also, ECS will continue to hire NCC adjunct faculty to teach summer courses that will be offered at no charge to the students. Lastly, any courses not covered via these means, students are eligible to fill out the FAFSA application in order to determine financial aid, just like they would have done entering college after high school graduation. Anything above and beyond these resources are the responsibility of the student.</p>
+        </div>
+        </section>
+
+
+
+    </div>
+
+
+    <!--endpage-->
+
+
+
+    <footer class="site-footer">
+    <div class="footer-inner">
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="./">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/about.html#courses">Courses</a>
+        <a href="/application.html">Apply</a>
+        </nav>
+
+        <address class="footer-contact">
+        <p>Early College Studies</p>
+        <p>Stamford High School</p>
+        <p>123 Strawberry Hill Ave<br>Stamford, CT 06902</p>
+        <p>
+            <button
+                type="button"
+                class="copy-email"
+                data-email="ascianna@stamfordct.gov"
+                aria-label="Copy email address">
+                ascianna@stamfordct.gov
+            </button>
+        </p>
+        <p><a href="tel:+12039650123">(203) 977-5398</a></p>
+        </address>
+
+        <div class="footer-social" aria-label="Social media links">
+        <a href="https://www.linkedin.com/school/ecs-at-shs/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://youtube.com/@earlycollegestudiesatshs5268?si=PTfGTiBB1QcQIMA4" target="_blank" rel="noopener">Youtube</a>
+        <a href="https://www.instagram.com/ecs_shs" target="_blank" rel="noopener">Instagram</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Early College Studies at Stamford High School. All rights reserved.</p>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

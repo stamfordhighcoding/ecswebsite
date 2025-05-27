@@ -315,3 +315,64 @@ function facultyDetails(member) {
   // export scroll position
   scrolled = window.pageYOffset || document.documentElement.scrollTop;
 }
+/*-------------------------------------------------------------*/
+// script.js
+
+// keep these in module/global scope so the function can see them:
+var faqData = null;
+var currentLang = 'en';
+
+// define the one global function your button will call:
+function faqLanguageSwitch() {
+  // on first click, we still need to load the JSON…
+  if (!faqData) {
+    fetch('faq.json')
+      .then(res => res.json())
+      .then(data => {
+        faqData = data;
+        // after load, switch to Spanish mode (toggle flips first)
+        currentLang = 'es';
+        updateAll();
+        updateButton();
+      })
+      .catch(err => console.error(err));
+    return;
+  }
+
+  // on subsequent clicks, just flip language and re-render
+  currentLang = (currentLang === 'en' ? 'es' : 'en');
+  updateAll();
+  updateButton();
+}
+
+// helper to refill every .answer AND update each <a> with the proper text
+function updateAll() {
+  Object.entries(faqData).forEach(function([id, translations]) {
+    var section = document.getElementById(id);
+    if (!section) return;
+
+    // 1) Replace the <a> text under this section with a-{lang} from JSON:
+    var link = section.querySelector('h2 a');
+    if (link) {
+      // look for "a-en" or "a-es", fallback to a-en
+      var key = 'a-' + currentLang;
+      link.textContent = translations[key] || translations['a-en'] || '';
+    }
+
+    // 2) Populate the .answer div:
+    var answerDiv = section.querySelector('.answer');
+    if (!answerDiv) {
+      answerDiv = document.createElement('div');
+      answerDiv.className = 'answer';
+      section.appendChild(answerDiv);
+    }
+    answerDiv.innerHTML = translations[currentLang] || translations['en'] || '';
+  });
+}
+
+// helper to flip the button text
+function updateButton() {
+  var btn = document.getElementById('faq-language-switch');
+  if (!btn) return;
+  btn.textContent = (currentLang === 'en' ? 'Español' : 'English');
+}
