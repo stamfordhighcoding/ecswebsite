@@ -624,6 +624,10 @@ div.nav-tn-change{
     font-size:1.5rem;
     text-align:center;
 }
+.degree-table div a{
+    font-family:var(--font-regular);
+    text-decoration:none;
+}
 .degree-table > div:nth-child(n+2):nth-child(-n+4) {
     border-radius:10px;
     background-color:var(--contrast-lightest);
@@ -671,7 +675,12 @@ div.nav-tn-change{
     font-family:var(--font-regular);
     margin-left:-20px;
 }
-
+@media (max-width: 1030px) {
+.degree-table > div:nth-child(n+2):nth-child(-n+4)::before{
+    font-size:1rem;
+    line-height:4;
+}
+}
 .credit-details, .course-details{
   list-style-type: none;
   color: var(--contrast-light);
@@ -1012,7 +1021,7 @@ h2.long{
 }
 #faculty-profile-off::after {
     color:black;
-  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3E%3Cpath%20fill='currentColor'%20d='m12%2013.4l-4.9%204.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9%204.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4%2012l4.9%204.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3E%3Cpath%20fill='black'%20d='m12%2013.4l-4.9%204.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9%204.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4%2012l4.9%204.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z'/%3E%3C/svg%3E");
   display: block;
   width: 60px;
   height: auto;
@@ -1055,6 +1064,7 @@ h2.long{
 }
 #faculty-profile > div:nth-child(odd) {
   font-size: 1.5rem;
+  text-align:center;
 }
 @media screen and (max-width: 1600px) {
     #faculty-profile > div:nth-child(odd) {
@@ -1096,4 +1106,70 @@ h2.long{
         #faculty-profile p{
             padding:10px;
         }
+}
+/*------------------------------------------------------------------*/
+/*-----------------------*/
+.faq-item .answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.faq-item:target .answer {
+  /* “open” the answer when its parent is targeted by hash */
+  max-height: 500px;  /* large enough to show your content */
+  overflow-y:auto;
+}
+/*--------*/
+.content.eng a{
+    color:var(--theme-2);
+    text-decoration:none;
+    font-family:var(--font);
+}
+.content.eng .answer{
+    color:var(--contrast);
+    font-family:var(--font-regular);
+}
+.content.eng .answer a{
+    font-family:var(--font-regular);
+    text-decoration:underline;
+}
+#faq-language-switch{
+    width:max-content;
+    margin: 40px 40px 0px;
+    font-family:var(--font);
+    border:none;
+    border-radius:20px;
+    padding:10px;
+    background-color:var(--theme);
+    cursor:pointer;
+}
+
+
+
+
+#faq-language-switch span{
+    font-size:1rem;
+}
+.content ul{
+    font-family:var(--font-regular);
+}
+#app-form::before{
+    content:'Click here to open in a new tab';
+    display:block;
+}
+#gform-link{
+    color:var(--theme-2);
+    font-size:2rem;
+    float:right;
+    margin-right:20px;
+    transform:translateY(50px);
+}
+#gform-link::after {
+  mask: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%2032%2032'%3E%3Cpath%20fill='none'%20stroke='currentColor'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='4'%20d='M22%203h7v7m-1.5-5.5L20%2012m-3-7H8a3%203%200%200%200-3%203v16a3%203%200%200%200%203%203h16a3%203%200%200%200%203-3v-9'/%3E%3C/svg%3E") no-repeat center / contain;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1em'%20height='1em'%20viewBox='0%200%2032%2032'%3E%3Cpath%20fill='none'%20stroke='currentColor'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='4'%20d='M22%203h7v7m-1.5-5.5L20%2012m-3-7H8a3%203%200%200%200-3%203v16a3%203%200%200%200%203%203h16a3%203%200%200%200%203-3v-9'/%3E%3C/svg%3E") no-repeat center / contain;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  display: inline-block;
+  content: '';
 }
