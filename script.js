@@ -376,3 +376,4 @@ function updateButton() {
   if (!btn) return;
   btn.textContent = (currentLang === 'en' ? 'Español' : 'English');
 }
+/*-----------------------------------------------------------------------------------------------------------*/
