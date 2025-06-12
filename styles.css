@@ -1310,3 +1310,11 @@ div#wwd-banner div{
                 min-height: 500px;
             }
         }
+         @media (max-width: 440px) {
+            #stats-col-2 h1{
+                font-size: 30px;
+            }
+            .col-2 > *:nth-child(even) {
+                margin-left: calc(var(--margin)/2);
+            }
+         }
